@@ -69,7 +69,7 @@ class WhatsappStickerImage {
   WhatsappStickerImage._internal(this.path);
 
   factory WhatsappStickerImage.fromAsset(String asset) {
-    return WhatsappStickerImage._internal('assets://$asset');
+    return WhatsappStickerImage._internal($asset);
   }
 
   factory WhatsappStickerImage.fromFile(String file) {
